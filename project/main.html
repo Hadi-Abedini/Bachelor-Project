@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="text-left">
+    <div id="main-page" class="px-8 py-4 flex flex-col gap-5 items-center">
+        <header class="w-full flex flex-col gap-5">
+            <div class="flex flex-row justify-center w-100">
+                <span class="text-2xl font-bold ">دوره های دانشگاهی</span>
+            </div>
+            <button id="searchBtn" class="search px-3 py-2 bg-[#ECECEC] rounded flex items-center gap-3">
+                <img src="./assets/search.svg" alt="">
+                    <div class="w-full text-gray-500 leading-tight py-2">جستجو</div>
+            </button>
+            <div class="grid grid-cols-4 grid-rows-2 place-items-center gap-3">
+                <div class="flex flex-col items-center gap-2">
+                    <button id="filter-btn" value="دانشگاه سمنان"
+                        class="w-[60px] h-[60px] bg-[#ECECEC] flex flex-row justify-center items-center rounded-full">
+                        <img class="w-[25px]" src="assets/uni/semnan.webp" alt="">
+                    </button>
+                    <span class="max-w-full truncate text-sm font-semibold">دانشگاه سمنان</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <button id="filter-btn" value="دانشگاه تهران"
+                        class="w-[60px] h-[60px] bg-[#ECECEC] flex flex-row justify-center items-center rounded-full">
+                        <img class="w-[25px]" src="assets/uni/tehran.png" alt="">
+                    </button>
+                    <span class="max-w-full truncate text-sm font-semibold">دانشگاه تهران</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <button id="filter-btn" value="دانشگاه رشت"
+                        class="w-[60px] h-[60px] bg-[#ECECEC] flex flex-row justify-center items-center rounded-full">
+                        <img class="w-[25px]" src="assets/uni/rasht.png" alt="">
+                    </button>
+                    <span class="max-w-full truncate text-sm font-semibold">دانشگاه رشت</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <button id="filter-btn" value="دانشگاه اصفهان"
+                        class="w-[60px] h-[60px] bg-[#ECECEC] flex flex-row justify-center items-center rounded-full">
+                        <img class="w-[25px]" src="assets/uni/sfahan.png" alt="">
+                    </button>
+                    <span class="max-w-full truncate text-sm font-semibold">دانشگاه اصفهان</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <button id="filter-btn" value="دانشگاه تبريز"
+                        class="w-[60px] h-[60px] bg-[#ECECEC] flex flex-row justify-center items-center rounded-full">
+                        <img class="w-[25px]" src="assets/uni/tabriz.png" alt="">
+                    </button>
+                    <span class="max-w-full truncate text-sm font-semibold">دانشگاه تبریز</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <button id="filter-btn" value="دانشگاه شيراز"
+                        class="w-[60px] h-[60px] bg-[#ECECEC] flex flex-row justify-center items-center rounded-full">
+                        <img class="w-[25px]" src="assets/uni/shiraz.png" alt="">
+                    </button>
+                    <span class="max-w-full truncate text-sm font-semibold">دانشگاه شيراز</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <button id="filter-btn" value="دانشگاه قم"
+                        class="w-[60px] h-[60px] bg-[#ECECEC] flex flex-row justify-center items-center rounded-full">
+                        <img class="w-[25px]" src="assets/uni/qom.png" alt="">
+                    </button>
+                    <span class="max-w-full truncate text-sm font-semibold">دانشگاه قم</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <button id="filter-btn" value="all"
+                        class="w-[60px] h-[60px] bg-[#ECECEC] flex flex-row justify-center items-center rounded-full">
+                        <img class="w-[25px]" src="assets/more.svg" alt="">
+                    </button>
+                    <span class="max-w-full truncate text-sm font-semibold">بیشتر ...</span>
+                </div>
+            </div>
+        </header>
+        <div class="w-full flex justify-between items-center">
+            <span class="text-xl font-semibold">جدید ترین دوره ها</span>
+            <button id="see-all-new" class="font-semibold">مشاهده همه</ذ>
+        </div>
+        <main class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-3">
+            <div id="item" class="bg-white bg-[#b9bee4] max-h-[181px] rounded-3xl p-6 hidden items-center justify-center w-[100%] gap-5 border-[3px] border-gray-900">
+                <div class=" bg-[#F3F3F3] flex items-center justify-center rounded-3xl p-5">
+                    <img class="w-20" src="assets/uni/semnan.webp" alt="">
+                </div>
+                <div class="hidden flex flex-col items-start w-full gap-2">
+                        <span class="w-full line-clamp-1 text-xl font-bold"></span>
+                        <span class="w-full line-clamp-1 text-xl text-[#2e2e2e]"></span>
+                        <span class="w-full line-clamp-1 text[#706E6B]"></span>
+                        <span class="w-full line-clamp-1 text[#706E6B]"></span>
+                        <span class="w-full line-clamp-1 text[#706E6B]"></span>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!-- <div id="filter-page" class="px-4 flex flex-col items-center">
+    <header class="w-full bg-white flex gap-4 sticky top-0 py-3">
+        <button id="back-btn"><img src="./assets/back-arrow.svg" alt=""></button>
+        <span id="filter-title" class="text-xl font-semibold"></span>
+    </header>
+    <div id="filter-main" class="w-[100%] grid grid-cols-2 place-items-center gap-3 py-4 overflow-auto">
+                <button id="item" value="${data[i].id}" class=" hidden flex-col items-center w-[100%] gap-2">
+        <div class="w-[100%] bg-[#F3F3F3] flex items-center justify-center p-5 rounded-3xl">
+            <img class="h-[91.14px]" src="${data[i].image[1]}" alt="">
+        </div>
+        <div class="flex flex-col">
+            <span class="text-lg font-bold">${data[i].model}</span>
+        <span class="font-semibold text-[#152536] text-left">$ ${data[i].price}</span>
+        </div>
+    </button>
+    </div>
+</div> -->
+        <!-- <footer class="w-full fixed bottom-0 flex items-center justify-evenly py-4 bg-white">
+            <img src="./assets/icon/house-door-fill.svg" alt="">
+            <button id="cart"><img src="./assets/icon/cart.svg" alt=""></button>
+            <img src="./assets/icon/bag.svg" alt="">
+            <img src="./assets/icon/wallet.svg" alt="">
+            <img src="./assets/icon/person.svg" alt="">
+        </footer> -->

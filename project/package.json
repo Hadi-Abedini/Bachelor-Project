@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "watch": "tailwindcss -i ./css/input.css -o ./css/main.css --watch"
+  },
+  "dependencies": {
+    "color-convert": "^2.0.1",
+    "flowbite": "^1.8.1"
+  }
+}
